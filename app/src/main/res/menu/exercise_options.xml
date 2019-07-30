@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".physical.exercise.PhysicalExerciseMain">
+
+    <item
+        android:id="@+id/stepCounter_notification"
+        android:icon="@mipmap/step_counter_notification"
+        android:orderInCategory="300"
+        android:title="@string/step_counter_toolbar"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/parkinson_notification"
+        android:icon="@mipmap/left_hand_tab_parkinson_test"
+        android:orderInCategory="600"
+        android:title="@string/parkinson_test_toolbar"
+        app:showAsAction="ifRoom">
+
+        <menu>
+            <item
+                android:id="@+id/parkinson_timer_configuration"
+                android:title="@string/parkinsonTestSetTimerConfiguration"
+                app:showAsAction="ifRoom|withText" />
+
+            <item
+                android:id="@+id/parkinsonTestGame1"
+                android:title="@string/parkinsonTestGame1"
+                app:showAsAction="ifRoom|withText" />
+
+            <item
+                android:id="@+id/parkinsonTestGame2"
+                android:title="@string/parkinsonTestGame2"
+                app:showAsAction="ifRoom|withText" />
+        </menu>
+    </item>
+</menu>

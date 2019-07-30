@@ -1,0 +1,549 @@
+<resources>
+    <string name="app_name" translatable="false">Alzheimers App</string>
+    <string name="settings">Settings</string>
+    <string name="exitMessage">Please click twice to exit</string>
+
+    <!-- Categories Main Page -->
+    <string name="personalData">Profile</string>
+    <string name="information">Disease Information</string>
+    <string name="dietary">Dietary</string>
+    <string name="exercise">Physical Exercise</string>
+    <string name="report">Reporting</string>
+    <string name="diary">Personal Reporting</string>
+    <string name="medications">Medications</string>
+    <string name="mydoctor">My Doctors</string>
+
+    <!-- Profile Page  -->
+    <string name="profileName">Name</string>
+    <string name="expandedImage">Image Animation</string>
+    <string name="stepsSummary">You walked a total average number of 0 steps while using
+        Medical App University.</string>
+    <string name="bodyMassIndex">Body Mass Index \u2248 0</string>
+    <string name="underweightBodyMassIndex">Underweight</string>
+    <string name="normalWeightBodyMassIndex">Normal Weight</string>
+    <string name="overweightBodyMassIndex">Overweight</string>
+    <string name="obesityBodyMassIndex">Obesity</string>
+    <string name="profileInformation">Profile Information</string>
+    <string name="myMG">My Myasthenia Gravis</string>
+    <string name="gender">Gender</string>
+    <string name="birthday">Date of Birth</string>
+    <string name="height">Height</string>
+    <string name="weight">Weight</string>
+    <string name="dateDiagnosis">Date of my diagnosis</string>
+    <string name="nextAppointment">Next Appointment</string>
+
+
+    <!-- Profile Dialog Boxes Information -->
+    <string name="errorMessage">Name must not be empty</string>
+    <string name="profileDialogButtonPositive">Confirm</string>
+    <string name="profileDialogButtonNegative">Cancel</string>
+    <string name="profileDialogTitle">Change Profile Name</string>
+    <string name="profileDialogDescription">Enter new profile name:</string>
+    <string name="profileDialogHint">Andreas</string>
+    <string name="genderDialogTitle">Select your gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="birthDateDefaultSetDate">15/6/1980</string>
+    <string name="heightDialogTitle">Choose your height</string>
+    <string name="weightDialogTitle">Choose your weight</string>
+
+
+    <!-- Add Doctors -->
+    <string name="myDoctorsInfo">My Doctors Info</string>
+    <string name="updateDoctorInfo">Edit Doctor\'s Info</string>
+    <string name="add_doctor_title">Add Doctor</string>
+    <string name="doctor_name">Doctor\'s Name *</string>
+    <string name="speciality">Speciality</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="email_doc">Email</string>
+    <string name="notes">Notes</string>
+    <string name="phone_prompt">Mobile</string>
+    <string-array name="phone">
+        <item>Mobile</item>
+        <item>Work</item>
+    </string-array>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="phoneMobile">Mobile</string>
+    <string name="phoneWork">Work</string>
+
+    <!-- Disease Description  -->
+    <string name="mgInformation">Information</string>
+    <string name="contact">Contact</string>
+
+
+    <!-- Hydration Information -->
+    <string name="hydration_instruction">
+        Press the glass of water after you\'ve hydrated.</string>
+    <string name="water_increment_content_desc">Press to record drinking water</string>
+    <string name="default_water_count">0</string>
+    <string name="reach_water_goal">0/8</string>
+    <string name="default_water_increment">Press to add drinking water</string>
+    <string name="default_water_decrement">Press to subtract drinking water</string>
+    <string name="default_water_counter_in_milliliters">0 ml</string>
+    <string name="glasses">glasses</string>
+    <string name="glasses_message">Set a daily water drink intake\n<b><i>1 glass \u2248 250 ml</i></b></string>
+    <string name="errorMessageWhenNoProfileDataAvailable">Fill in all your personal data
+        to calculate your TOTAL BODY WATER percentage :)</string>
+
+
+    <!-- Exercise Tabs-->
+    <string name="exerciseDemoTab1">Exercises Demo</string>
+    <string name="parkinsonTestTab3">Parkinson Test</string>
+    <string name="step_counter_toolbar">Step Counter Timer</string>
+    <string name="parkinson_test_toolbar">Parkinson Test Timer</string>
+    <string name="stepCounterTimerDialogTitle">Choose timer for Step Counter</string>
+    <string name="parkinsonTestTimerDialogTitle">Choose timer for Parkinson Test</string>
+    <string name="parkinsonTestSetTimerConfiguration">Set Timer</string>
+    <string name="parkinsonTestGame1">Test with 1 button</string>
+    <string name="parkinsonTestGame2">Test with 2 buttons</string>
+
+
+    <!-- Disease Information -->
+    <string name="mg">Myasthenia Gravis</string>
+    <string name="what">What is?</string>
+    <string name="causes">Causes</string>
+    <string name="symp">Symptoms</string>
+    <string name="diagnosis">Diagnosis</string>
+    <string name="treatment">Treatment</string>
+    <string name="complication">Complications</string>
+    <string name="epidemio">Epidemiology</string>
+    <string name="long_outlook">Long-term outlook</string>
+    <string name="association">Contact Association</string>
+
+    <string name="what_is_Title">Alzheimer\'s Disease\n</string>
+    <string name="what_is_1">Alzheimer’s disease is an irreversible, progressive brain
+        disorder that slowly destroys memory and thinking skills and, eventually, the ability
+        to carry out the simplest tasks. In most people with the disease—those with the late-onset
+        type—symptoms first appear in their mid-60s. Early-onset Alzheimer’s occurs between a person’s
+        30s and mid-60s and is very rare. Alzheimer’s disease is the most common cause of dementia among
+        older adults.</string>
+    <string name="what_is_2">The disease is named after Dr. Alois Alzheimer. In 1906, Dr. Alzheimer
+        noticed changes in the brain tissue of a woman who had died of an unusual mental illness.
+        Her symptoms included memory loss, language problems, and unpredictable behavior. After she
+        died, he examined her brain and found many abnormal clumps (now called amyloid plaques) and
+        tangled bundles of fibers (now called neurofibrillary, or tau, tangles).</string>
+
+
+    <string name="what_is_3">These plaques and tangles in the brain are still considered some of the
+        main features of Alzheimer’s disease. Another feature is the loss of connections between
+        nerve cells (neurons) in the brain. Neurons transmit messages between different parts of the
+        brain, and from the brain to muscles and organs in the body. Many other complex brain changes
+        are thought to play a role in Alzheimer’s, too.</string>
+
+    <string name="what_is_4">This damage initially appears to take place in the hippocampus, the
+        part of the brain essential in forming memories. As neurons die, additional parts of the brain
+        are affected. By the final stage of Alzheimer’s, damage is widespread, and brain tissue has
+        shrunk significantly.</string>
+
+
+
+    <string name="causes_Title">Causes\n</string>
+    <string name="causes_1">Like all types of dementia, Alzheimer\'s is caused by brain cell death.
+        It is a neurodegenerative disease, which means there is progressive brain cell death that happens over time.
+    </string>
+    <string name="causes_2">Risk factors:</string>
+    <string name="causes_3">Unavoidable risk factors for developing the condition include:\n
+        aging, a family history of Alzheimer\'s, carrying certain genes.
+    </string>
+    <string name="causes_4">Modifiable factors that may help prevent Alzheimers include:\n
+         •  getting regular exercise\n
+         •  maintaining a healthy cardiovascular system\n
+         •  following a varied and healthful diet\n
+         •  participating in lifelong learning and cognitive training\n
+        Some studies suggest that staying mentally and socially engaged may possibly reduce the risk of Alzheimers.\n
+    </string>
+
+
+
+    <string name="symptom_Title">Symptoms\n</string>
+    <string name="symptom_1">The cognitive decline must be seen in at least two of the five symptom areas listed below:</string>
+    <string name="symptom_2"><b>Symptoms of MG can include:</b>\n
+        •  repetitive questions or conversations\n
+        •  misplacing personal belonging\n
+        •  forgetting events or appointments\n
+        •  getting lost on a familiar route\n
+        •  poor understanding of safety risks\n
+        •  inability to recognize faces or common objects or to find objects in direct view\n
+        •  inability to use simple tools, for example, to orient clothing to the body\n
+        •  difficulty thinking of common words while speaking, hesitations\n
+        •  out-of-character mood changes, including agitation, apathy, social withdrawal or a lack of interest, motivation, or initiative\n
+        •  loss of empathy\n
+        •  compulsive, obsessive, or socially unacceptable behavior\n
+    </string>
+    <string name="symptom_3">Alzheimer\'s is most likely when memory loss is a prominent symptom, especially in the area of learning and recalling new information.\n</string>
+
+
+    <string name="diagnosis_Title">Diagnosis\n</string>
+    <string name="diagnosis_1">There is no single test for Alzheimers disease, so doctors will
+        look at the signs and symptoms, take a medical history, and rule out other conditions before
+        making a diagnosis. Sometimes the symptoms of dementia are related to an inherited disorder
+        such as Huntingtons disease, so genetic testing may be done. After ruling out other
+        possible conditions, the doctor will carry out cognitive and memory tests, to assess
+        the persons ability to think and remember.\n</string>
+    <string name="diagnosis_2">Cognitive Assesment.To confirm a diagnosis of Alzheimer\'s, the following
+        must be present and severe enough to affect daily activities:\n
+        •  gradual memory loss\n
+        •  progressive cognitive impairment\n
+
+    </string>
+    <string name="diagnosis_3">Genetic testing
+        In some cases, genetic testing may be appropriate.
+        A gene known as the APOE-e4 is associated with higher chances of people over the age of 55 years developing Alzheimer\'s.
+        Using this test early could indicate the likelihood of someone having or developing the disease.
+        However, the test is controversial, and the results are not entirely reliable.\n
+    </string>
+
+    <string name="treatment_Title">Treatment\n</string>
+    <string name="treatment_1">Alzheimer’s disease is complex, and it is unlikely that any one
+        drug or other intervention will successfully treat it. Current approaches focus on helping
+        people maintain mental function, manage behavioral symptoms, and slow down the symptoms of
+        disease.</string>
+    <string name="treatment_2_medication">•	<b>Treatment for Mild to Moderate Alzheimer’s: </b>\n
+         Medications called cholinesterase inhibitors are prescribed for mild to moderate Alzheimer’s
+        disease. These drugs may help reduce some symptoms and help control some behavioral symptoms.
+        Scientists do not yet fully understand how cholinesterase inhibitors work to treat Alzheimer’s
+        disease, but research indicates that they prevent the breakdown of acetylcholine, a brain
+        chemical believed to be important for memory and thinking. </string>
+    <string name="treatment_3_thymectomy">•	<b>Treatment for Moderate to Severe Alzheimer’s: </b>\n
+        A medication known as Namenda® (memantine), an N-methyl D-aspartate (NMDA) antagonist, is
+        prescribed to treat moderate to severe Alzheimer’s disease. This drug’s main effect is to
+        decrease symptoms, which could allow some people to maintain certain daily functions a little
+        longer than they would without the medication.</string>
+
+
+
+    <string name="complications_Title">Complications of Myasthenia Gravis\n</string>
+    <string name="complications">One of the most dangerous potential complications of MG is
+        myasthenic crisis. This consists of life-threatening muscle weakness that can include
+        breathing problems or cause the person to have difficulty breathing on their own.\n\n
+        The long term use of steroids can cause\n
+        • Osteoporosis\n
+        • Cataract\n
+        • Hyperglycemia\n
+        • Weight gain\n
+        • Hypertension\n
+        • Gastritis or peptic ulcer disease\n\n
+        Individuals with MG are at a higher risk of developing other autoimmune disorders such as
+        rheumatoid arthritis or lupus.\n
+    </string>
+
+    <string name="epidemiology_Title">Epidemiology\n</string>
+    <string name="epidemiology">An annual incidence rate of MG is thought to be between 0.25 and 20
+        per 1,000,000 population.\n\n
+        MG can affect both genders and all races. Previous studies have shown that women are more
+        often affected than men. For women, the most common age at onset is between second and
+        fourth decades of life. For men the onset of symptoms is usually after the age of 50.\n\n
+        In Cyprus it is estimated at 1 per 2,500 population, approximately 300 cases.\n\n
+        However, Myasthenia Gravis remains underdiagnosed and the prevalence is probably higher.\n
+    </string>
+
+    <string name="long_term_Title">Long-term outlook\n</string>
+    <string name="long_term1">The long-term outlook for MG depends on a lot of factors. Some people
+        will only have mild symptoms. Others may eventually become confined to a wheelchair.</string>
+    <string name="long_term2">Talk to your doctor about what you can do to minimize the severity of your MG. Early and
+        proper treatment can limit disease progression in many people.\n</string>
+
+
+    <!-- Association -->
+    <string name="MGAssociation">Myasthenia Gravis Association Cyprus\n</string>
+    <string name="phoneNumber">70006717</string>
+    <string name="email">myasthenia.gravis@cytanet.com.cy</string>
+    <string name="link_website">
+        <a href="https://www.mgcyprus.com/">https://www.mgcyprus.com/</a>
+    </string>
+    <string name="link_facebook">
+        <a href="https://www.facebook.com/mgcyprus/">Myasthenia Gravis Cyprus</a>
+    </string>
+
+
+    <!-- DiaryMain -->
+    <string name="new_report">New Report</string>
+    <string name="next">NEXT</string>
+    <string name="back">BACK</string>
+    <string name="save">SAVE</string>
+
+
+
+
+    <!-- 2 slide - Emotion -->
+    <string name="feel">How do you feel?</string>
+    <string name="stress">Stress?</string>
+    <string name="stress_quide"> 0 = no stress, 10 = full stress \n</string>
+    <string name="menstruation">Menstruation?</string>
+    <string name="yes"> Yes </string>
+    <string name="no"> No </string>
+
+    <!-- 3 slide - Weakness -->
+    <string name="weakness">Weakness\n</string>
+    <string name="weakness_front">Front</string>
+    <string name="weakness_back">Back</string>
+
+    <!-- 4 slide - Moment -->
+    <string name="moment">When do you feel more weakness?\n</string>
+    <string name="moment_morning">in the morning</string>
+    <string name="moment_before_lunch">in the noon, before the lunch</string>
+    <string name="moment_after_lunch">in the noon, after the lunch</string>
+    <string name="moment_afternoon">in the afternoon</string>
+    <string name="moment_evening">in the evening</string>
+
+    <!-- 5 slide Symptoms -->
+    <string name="symptoms">Which others are your symptoms?\n</string>
+    <string name="drooping_of_eyelids">drooping of eyelids</string>
+    <string name="double_vision">double vision</string>
+    <string name="speaking">altered speaking</string>
+    <string name="swallowing_chewing">difficulty swallowing / chewing</string>
+    <string name="headache">headaches</string>
+    <string name="balance">abnormalities in balance</string>
+    <string name="dif_breathing">difficulty breathing</string>
+    <string name="concentration_memory">loss of concentration and memory</string>
+
+    <!-- 6 slide - Additional Comments-->
+    <string name="add_comment">Additional Comments?\n</string>
+
+
+    <!-- Reporting -->
+    <string name="title_report">Repoting</string>
+    <string name="export">Export</string>
+    <string name="send">Send</string>
+    <string name="message">Select a range of dates for which you want to prepare a pdf</string>
+    <string name="from">From:</string>
+    <string name="to">To:</string>
+    <string name="dialog_doctor">Select the doctor to send the report</string>
+
+    <!-- Medications -->
+    <string name="title_meds">My Medications</string>
+    <string name="today_meds">Today Medications</string>
+    <string name="all_meds">Medications</string>
+    <string name="refill_meds">Refill</string>
+    <string name="no_meds">Prohibitively Medications</string>
+
+    <!-- menu bar - medications -->
+    <string name="today_meds_btn">Med\'s\ntimetable</string>
+    <string name="all_meds_btn">My Meds</string>
+    <string name="attention_btn">Attention</string>
+
+
+    <!-- Add Medication -->
+    <string name="addNewMed">Add Medication</string>
+    <string name="med_name">Medication Name *</string>
+    <string name="dosage">Dosage</string>
+    <string name="med_prompt">mg</string>
+    <string-array name="med">
+        <item>mg</item>
+        <item>g</item>
+        <item>ml</item>
+        <item>tablets</item>
+        <item>pills</item>
+        <item>drops</item>
+        <item>sprays</item>
+        <item>ampules</item>
+    </string-array>
+
+    <string name="dos_type_mg">mg</string>
+    <string name="g">g</string>
+    <string name="ml">ml</string>
+    <string name="tablets">tablets</string>
+    <string name="pills">pills</string>
+    <string name="dos_type_drops">drops</string>
+    <string name="sprays">sprays</string>
+    <string name="ampules">ampules</string>
+
+
+    <string name="instructions">Instructions</string>
+    <string name="instructions_prompt">instructions</string>
+    <string-array name="instructions">
+        <item>No instructions</item>
+        <item>Before food</item>
+        <item>With food</item>
+        <item>After food</item>
+        <item>Avoid sugar</item>
+        <item>Avoid salty food</item>
+        <item>Never take with milk</item>
+        <item>Take on an empty stomach</item>
+    </string-array>
+
+    <string name="noInstructions">No instructions</string>
+    <string name="beforeFood">Before Food</string>
+    <string name="withFood">With food</string>
+    <string name="afterFood">After food</string>
+    <string name="avoidSugar">Avoid sugar</string>
+    <string name="avoidSaltyFood">Avoid salty food</string>
+    <string name="neverTakeWithMilk">Never take with milk</string>
+    <string name="emptyStomach">Take on an empty stomach</string>
+
+    <string name="schedule">Schedule</string>
+    <string name="startDate">Start Date:</string>
+    <string name="duration">Duration:</string>
+    <string name="continuous">Continuous</string>
+    <string name="fosSomeDays">For some days</string>
+    <string name="days">Days</string>
+    <string name="everyDay">Every Day</string>
+    <string name="specificDays">Specific Days of week</string>
+    <string name="interval">Interval of days</string>
+    <string name="timesDay">Times in a day:</string>
+    <string name="plus">+</string>
+
+    <string name="today">Today</string>
+    <string name="giveAnotherNumbers">Please give another numbers for current and remain stock</string>
+    <string name="giveANumberBigger">Please give a number for current stock bigger than remain stock</string>
+    <string name="giveTheSameType">Please give the same type for dosage, currently and remain stock</string>
+
+
+    <string name="noneDoctor">None Doctor</string>
+
+    <string name="reminder">Reminder</string>
+
+    <string name="tablet">Tablet</string>
+    <string name="capsule">Capsule</string>
+    <string name="syrup">Syrup</string>
+    <string name="drops">Drops</string>
+    <string name="injection">Injection</string>
+    <string name="spray">Spray</string>
+
+    <string name="refill">Refill</string>
+    <string name="currently_in_stock">Current in Stock:</string>
+    <string name="remind_when_in_stock">Remind me when the stock decreases to:</string>
+    <string name="what_time">What time?</string>
+
+    <string name="doctor">Doctor</string>
+    <string name="clickForTime">Click to select the time...</string>
+    <string name="selImgMed">Select type of medication</string>
+
+    <string name="editMed">Edit Medication</string>
+
+
+    <!-- Medication View -->
+    <string name="refillDetail">Refill Details</string>
+    <string name="radial_time_picker_result_value">%1$d:%2$d</string>
+    <string name="AM">AM</string>
+    <string name="PM">PM</string>
+    <string name="dontRemindMe">Don\'t remind me!</string>
+    <string name="remindMeAT">Remind me at</string>
+    <string name="whenCurrentStockIs">When remain stock is</string>
+    <string name="startDateView">Start Date</string>
+    <string name="take">Take</string>
+    <string name="everyInterval">Every</string>
+    <string name="DaysView">days</string>
+    <string name="takeIt">- take it for </string>
+
+    <string name="refillTitle">Refill your prescription</string>
+    <string name="nowYouHave">Now, you have </string>
+    <string name="medications_small">medications.</string>
+    <string name="add">Add</string>
+
+    <string name="CurrentStock">My current stock is </string>
+
+
+    <!-- Prohibitively Medications -->
+    <string name="attention"><b>ATTENTION!</b> The following medications are indicative. Before take a medication talk with your doctor.</string>
+
+    <string name="anesthetic_medications">Anesthetic</string>
+    <string name="anesthetic">
+        • Curare\n
+        • Non – depolarizing (Vencurinium)\n
+    </string>
+
+    <string name="antibiotic_medications">Antibiotics</string>
+    <string name="antibiotic1">
+        • Neomycin\n
+        • Streptomycin \n
+        • Gentamicin\n
+        • Colistin\n
+        • Kanamycin\n
+        • Tobramycin\n
+        • Polymyxin\n
+        • Viomycin\n
+        • Sulfonamides\n
+        • Telithromycin\n
+    </string>
+
+    <string name="antibiotic2">
+        • Amikacin\n
+        • Polymyxin B\n
+        • Tetracyclines\n
+        • Lincomycin\n
+        • Clindamycin\n
+        • Erythromycin\n
+        • Ampicillin\n
+        • Fluoroquinolones\n(Norfloxacin, Ofloxacin, Pefloxacin)\n
+    </string>
+
+    <string name="cardio_medications">Cardiovascular Medications</string>
+    <string name="cardio">
+        • Procainamide\n
+        • Procaine \n
+        • Beta – blockers (Propranolol,Pindolol,Sotalol,Timolol)\n
+        • Quinidine\n
+        • Verapamil\n
+        • Bretylium\n
+    </string>
+
+    <string name="nervous_system_medications">Medications for Nervous System</string>
+    <string name="nervous_system">
+        • Chlorpromazine\n
+        • Lithium\n
+        • Gabapentin\n
+        • Phenytoin\n
+        • Amitriptyline\n
+        • Barbiturates\n
+        • Benzodiazepines\n
+    </string>
+
+    <string name="other_medications">Other</string>
+    <string name="other">
+        • Chloroquine\n
+        • Botulinum toxin\n
+        • Bactracin\n
+        • Quinine\n
+        • Penicillamin\n
+        • Magnesium\n
+        • L- camitine\n
+        • Contrast agents\n\n
+        • Mint\n
+    </string>
+
+    <!-- report -->
+    <string name="emotionReport">Emotion:</string>
+    <string name="stressReport">Stress:</string>
+    <string name="menstruationReport">Menstruation:</string>
+    <string name="weaknessReport">Weakness:</string>
+    <string name="timeOfTheWeakness">Time of the Weakness:</string>
+    <string name="symptomReport">Symptoms</string>
+
+
+    <!-- Toast messages -->
+    <string name="dateIsNotValid">The date is not valid...</string>
+    <string name="TheNameIsRequires_Doctor">The name of doctor is required</string>
+    <string name="saved">Saved!</string>
+    <string name="somethingWentWrong">Something went wrong</string>
+    <string name="fieldCanNotBeEmpty">Field can not be empty</string>
+    <string name="giveNameForMed">Please give a name of your medication</string>
+    <string name="wrongDate">Wrong Date</string>
+    <string name="date">Date</string>
+    <string name="my_diary">My Diary</string>
+    <string name="rate_your_day_today">Rate your day Today</string>
+    
+    <!-- katerina -->
+    <string-array name="moods">
+        <item>Angry</item>
+        <item>Anxious</item>
+        <item>Calm</item>
+        <item>Content</item>
+        <item>Depressed</item>
+        <item>Edgy</item>
+        <item>Happy</item>
+        <item>Irritated</item>
+        <item>Nervous</item>
+        <item>Sad</item>
+        <item>Sleepy</item>
+        <item>Stressed</item>
+        <item>Tired</item>
+        <item>Worried</item>
+
+
+    </string-array>
+
+
+</resources>
+

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ehealth.lab.university.reporting.ReportMain">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:background="@color/primary"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="2dp"
+            android:minHeight="?android:attr/actionBarSize"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            tools:targetApi="lollipop">
+
+        </android.support.v7.widget.Toolbar>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                tools:context=".reporting.ReportMain">
+
+                <TextView
+                    android:id="@+id/message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:gravity="center_horizontal"
+                    android:text="@string/message"
+                    android:textColor="@color/primary"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/message"
+                    android:layout_centerHorizontal="true">
+
+                    <Button
+                        android:id="@+id/buttonSend"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/toText"
+                        android:layout_marginTop="70dp"
+                        android:background="@drawable/button_clicked_shape"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:onClick="confirm"
+                        android:text="@string/send"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/buttonExport"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:background="@drawable/button_clicked_shape"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:onClick="confirmExport"
+                        android:text="@string/export"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/fromlbl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/fromLine"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="38dp"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:gravity="center"
+                        android:text="@string/from"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/fromText"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="60dp"
+                        android:layout_toEndOf="@+id/fromlbl"
+                        android:fontFamily="sans-serif"
+                        android:textAlignment="center"
+                        android:textColor="@color/primary"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/fromLine"
+                        android:layout_width="120dp"
+                        android:layout_height="10dp"
+                        android:layout_alignStart="@+id/fromText"
+                        android:layout_below="@+id/fromText"
+                        android:background="@drawable/line_border" />
+
+
+                    <TextView
+                        android:id="@+id/tolbl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/toLine"
+                        android:layout_alignStart="@+id/fromlbl"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:text="@string/to"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/toText"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/fromText"
+                        android:layout_below="@+id/fromText"
+                        android:layout_marginTop="28dp"
+                        android:fontFamily="sans-serif"
+                        android:textAlignment="center"
+                        android:textColor="@color/primary"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/toLine"
+                        android:layout_width="120dp"
+                        android:layout_height="10dp"
+                        android:layout_alignStart="@+id/toText"
+                        android:layout_below="@+id/toText"
+                        android:background="@drawable/line_border" />
+
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </ScrollView>
+
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="card_margin">6dp</dimen>
+    <dimen name="card_margin_rewards_start_end">3dp</dimen>
+    <dimen name="card_margin_rewards_bottom">5dp</dimen>
+    <dimen name="card_exercise_radius">10dp</dimen>
+    <dimen name="tabs_height">48dp</dimen>
+
+</resources>

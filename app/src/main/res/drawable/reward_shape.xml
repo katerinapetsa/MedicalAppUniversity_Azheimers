@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <corners android:radius="10dip" />
+
+    <stroke
+        android:width="2dip"
+        android:color="@color/teal_500" />
+    <solid android:color="@color/default_circle_indicator_stroke_color" />
+
+    <padding
+        android:bottom="10dip"
+        android:left="10dip"
+        android:right="10dip"
+        android:top="5dip" />
+</shape>

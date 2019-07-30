@@ -1,0 +1,367 @@
+<LinearLayout
+    android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.example.ehealth.lab.university.medications.MedProgram">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:background="@color/primary"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="2dp"
+            android:minHeight="?android:attr/actionBarSize"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            tools:targetApi="lollipop">
+
+        </android.support.v7.widget.Toolbar>
+
+    </LinearLayout>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:context="com.example.ehealth.lab.university.medications.MedProgram">
+
+        <RelativeLayout
+            android:id="@+id/med_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            tools:context="com.example.ehealth.lab.university.medications.MedProgram"
+            android:orientation="vertical"
+            style="@style/AlertDialog.AppCompat">
+
+            <android.support.v4.widget.NestedScrollView
+                android:id="@+id/scroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/viewHoriz"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+                <LinearLayout
+                    android:id="@+id/linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/btn_noMed"
+                    android:layout_below="@id/calendarView"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/attention"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@null"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:text="@string/attention"
+                        android:textColor="@color/primary"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/anestheticMed"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/attention"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="25dp"
+                        android:background="@null"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:text="@string/anesthetic_medications"
+                        android:textColor="@color/primary"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/anestheticMed"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <TextView
+                        android:id="@+id/anesthetic_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/anestheticMed"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="12dp"
+                        android:background="@null"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="@string/anesthetic"
+                        android:textColor="@color/primary"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/antibioticMed"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/anesthetic_txt"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="17dp"
+                        android:background="@null"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:text="@string/antibiotic_medications"
+                        android:textColor="@color/primary"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:id="@+id/view2"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/antibioticMed"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <TextView
+                            android:id="@+id/antibiotic_txt1"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/antibioticMed"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="12dp"
+                            android:background="@null"
+                            android:fontFamily="sans-serif-condensed"
+                            android:text="@string/antibiotic1"
+                            android:textColor="@color/primary"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:id="@+id/antibiotic_txt2"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/antibioticMed"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginTop="12dp"
+                            android:layout_toRightOf="@+id/antibiotic_txt1"
+                            android:background="@null"
+                            android:fontFamily="sans-serif-condensed"
+                            android:text="@string/antibiotic2"
+                            android:textColor="@color/primary"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/cardioMed"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@+id/antibiotic_txt1"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="17dp"
+                        android:background="@null"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:text="@string/cardio_medications"
+                        android:textColor="@color/primary"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:id="@+id/view3"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/cardioMed"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <TextView
+                        android:id="@+id/cardio_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/cardioMed"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="12dp"
+                        android:background="@null"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="@string/cardio"
+                        android:textColor="@color/primary"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/nervous_systemMed"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@+id/cardio_txt"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="17dp"
+                        android:background="@null"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:text="@string/nervous_system_medications"
+                        android:textColor="@color/primary"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:id="@+id/view4"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/nervous_systemMed"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <TextView
+                        android:id="@+id/nervous_system_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/nervous_systemMed"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="12dp"
+                        android:background="@null"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="@string/nervous_system"
+                        android:textColor="@color/primary"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/otherMed"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@+id/nervous_system_txt"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="17dp"
+                        android:background="@null"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:text="@string/other_medications"
+                        android:textColor="@color/primary"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:id="@+id/view5"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/otherMed"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <TextView
+                        android:id="@+id/other_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/otherMed"
+                        android:layout_marginBottom="90dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="12dp"
+                        android:background="@null"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="@string/other"
+                        android:textColor="@color/primary"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+            </android.support.v4.widget.NestedScrollView>
+
+            <View
+                android:id="@+id/viewHoriz"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_above="@+id/btn_MainMed"
+                android:layout_alignParentStart="true"
+                android:background="@color/cyan_500" />
+
+            <TextView
+                android:id="@+id/btn_AllMed"
+                android:layout_width="118dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/viewHoriz"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="@string/all_meds_btn"
+                android:textAlignment="center"
+                android:textColor="@color/primary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:layout_toEndOf="@+id/btn_MainMed"
+                android:background="@color/cyan_500"
+                android:id="@+id/viewHoriz2" />
+
+            <TextView
+                android:id="@+id/btn_MainMed"
+                android:layout_width="115dp"
+                android:layout_height="38dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="@string/today_meds_btn"
+                android:textAlignment="center"
+                android:background="#FFFFFF"
+                android:textColor="@color/primary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/btn_noMed"
+                android:layout_gravity="center"
+                android:background="@color/cyan_500"
+                android:id="@+id/viewHoriz3" />
+
+            <TextView
+                android:id="@+id/btn_noMed"
+                android:layout_width="115dp"
+                android:layout_height="38dp"
+                android:layout_alignBottom="@+id/viewHoriz3"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="@string/attention_btn"
+                android:textAlignment="center"
+                android:textColor="@color/primary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</LinearLayout>

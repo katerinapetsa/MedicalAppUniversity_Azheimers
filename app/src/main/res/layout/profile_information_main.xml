@@ -1,0 +1,290 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:contentScrim="@color/primary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <ImageView
+                android:id="@+id/expandedImage"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:contentDescription="@string/expandedImage"
+                android:scaleType="centerCrop"
+                android:background="@color/primary"
+                app:layout_collapseMode="parallax"
+                app:layout_collapseParallaxMultiplier="0.7" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:elevation="2dp"
+                android:minHeight="?android:attr/actionBarSize"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                tools:targetApi="lollipop" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            tools:context=".profile.information.ProfileMain">
+
+            <TextView
+                android:id="@+id/profileName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:background="@null"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="@string/profileName"
+                android:textColor="@color/primary"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/editProfileName"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="24dp"
+                android:layout_toEndOf="@+id/profileName"
+                android:background="@null"
+                android:contentDescription="@string/profileInformation"
+                android:src="@android:drawable/ic_menu_edit" />
+
+            <TextView
+                android:id="@+id/profileInformation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profileName"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="25dp"
+                android:background="@null"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="@string/profileInformation"
+                android:textColor="@color/primary"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/profileInformation"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:id="@+id/buttonsLinear"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/profileInformation"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <Button
+                        android:id="@+id/genderButton"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_selection"
+                        android:text="@string/gender"
+                        tools:ignore="ButtonStyle,NestedWeights" />
+
+
+                    <Button
+                        android:id="@+id/birthdayButton"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_selection"
+                        android:text="@string/birthday"
+                        tools:ignore="ButtonStyle" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <Button
+                        android:id="@+id/heightButton"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_selection"
+                        android:text="@string/height"
+                        tools:ignore="ButtonStyle,NestedWeights" />
+
+
+                    <Button
+                        android:id="@+id/weightButton"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_selection"
+                        android:text="@string/weight"
+                        tools:ignore="ButtonStyle" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/bodyMassIndex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/buttonsLinear"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="35dp"
+                android:background="@null"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/bodyMassIndex"
+                android:textColor="@color/primary"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/mgInformation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bodyMassIndex"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="25dp"
+                android:background="@null"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="@string/myMG"
+                android:textColor="@color/primary"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/mgInformation"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/darker_gray" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="8dp"
+            android:layout_below="@+id/mgInformation"
+            android:id="@+id/relativeLayout">
+
+
+            <TextView
+                android:id="@+id/dateOfDiagnosislbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/dateOfDiagnosisLine"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="15dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:gravity="center"
+                android:text="@string/dateDiagnosis"
+                android:textColor="@color/primary"
+                android:textSize="17sp" />
+
+
+            <TextView
+                android:id="@+id/dateOfDiagnosisText"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/dateOfDiagnosislbl"
+                android:fontFamily="sans-serif"
+                android:textAlignment="center"
+                android:textColor="@color/primary"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/dateOfDiagnosisLine"
+                android:layout_width="120dp"
+                android:layout_height="10dp"
+                android:layout_alignStart="@+id/dateOfDiagnosisText"
+                android:layout_below="@+id/dateOfDiagnosisText"
+                android:background="@drawable/line_border" />
+
+
+            <TextView
+                android:id="@+id/nextAppointmentlbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/dateOfDiagnosislbl"
+                android:layout_below="@+id/dateOfDiagnosislbl"
+                android:layout_marginTop="40dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:gravity="center"
+                android:text="@string/nextAppointment"
+                android:textColor="@color/primary"
+                android:textSize="17sp" />
+
+
+            <TextView
+                android:id="@+id/nextAppointmentText"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:layout_alignStart="@+id/nextAppointmentLine"
+                android:fontFamily="sans-serif"
+                android:textAlignment="center"
+                android:textColor="@color/primary"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/nextAppointmentLine"
+                android:layout_width="120dp"
+                android:layout_height="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/dateOfDiagnosisLine"
+                android:background="@drawable/line_border" />
+
+        </RelativeLayout>
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

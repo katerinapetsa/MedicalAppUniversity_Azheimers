@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/</item>
+        <item>@font/aclonica</item>
+        <item>@font/actor</item>
+        <item>@font/andika</item>
+        <item>@font/comfortaa_light</item>
+        <item>@font/happy_monkey</item>
+        <item>@font/roboto_slab_thin</item>
+    </array>
+</resources>
